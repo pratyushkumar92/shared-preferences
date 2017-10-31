@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pratyush.sharedpreferences2.result">
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="user name"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/tv2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="password"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:id="@+id/tv3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="occupation"
+       />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:id="@+id/tv4"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="age"
+       />
+
+</RelativeLayout>
