@@ -28,14 +28,15 @@ public class register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                SharedPreferences sharePreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
+                SharedPreferences sharePreferences=getSharedPreferences("MyData", MODE_PRIVATE);
+                String newUser=etu3.getText().toString();
+                String newPassword=etp4.getText().toString();
+                String newOccupation=eto5.getText().toString();
+                String newAge=eta6.getText().toString();
                 SharedPreferences.Editor editor=sharePreferences.edit();
-                editor.putString("name", etu3.getText().toString());
-                editor.putString("password", etp4.getText().toString());
-                editor.putString("occupation", eto5.getText().toString());
-                editor.putString("age", eta6.getText().toString());
+                editor.putString(newUser+newPassword+"data", "Hi "+newUser+" \n "+"You are a "+newOccupation +"\n"+"Your age is" +newAge+" Years");
                 editor.commit();
-                Intent intent=new Intent(register.this, result.class);
+                Intent intent=new Intent(register.this, MainActivity.class);
                 startActivity(intent);
 
             }
